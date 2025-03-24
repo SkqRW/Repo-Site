@@ -2,5 +2,11 @@
 
 .background_container .background {
     background-image: url(../media/img/background/Effects.jpg);
-    background-size: 100vmax 50vmax;
+    top: 0px;
+    height: 100vh;
+}
+@media only screen and (min-width: 200vh) {
+    .background_container .background {
+        height: 50vw;
+    }
 }

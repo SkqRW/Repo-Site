@@ -223,18 +223,22 @@ body {
 /* BACKGROUND */
 
 .background_container {
-    position: fixed;
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
-}
+    position: absolute;
+    top: 749px;
+    height: var(--background_height);
+    width: 100%;
 
+}
 .background_container .background {
     background-image: url(../media/img/background/BG.png);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+
+    position: sticky;
+    top: -50px;
+    bottom: 162px;
+    z-index: -1;
+    height: 1242px;
 }
 
 .transition_gradient {
@@ -253,6 +257,10 @@ body {
     }
     .banner .gradient p {
         margin-top: 17.98vw;
+    }
+
+    .background_container {
+        top: 65.7vw;
     }
 
     .transition_gradient {

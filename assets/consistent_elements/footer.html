@@ -1,4 +1,5 @@
 <div class="footer" id="footer">
+    <div class="smoothing"></div>
     <div class="content">
         <h3>Credits</h3>
         <div class="columns">
@@ -12,13 +13,6 @@
             <div class="element">
                 <img src="assets/media/img/icons/empty.png" alt="empty" id="empty_img" draggable="false">
                 <p>
-                    Alduris - Wiki blurbs<br>
-                    Bro - Cornifer, Init Editor blurb<br>
-                    Ongomato - Prop Renderer blurb
-                    MagicaJaphet - New Repo Logo
-                    Totally Dutch - Helping Fix Inits and Providing Material Preveiws<br>
-                    Skefir - Making prop inits<br>
-                    Rød ara - Making the effects compilation Thumbnail
                 </p>
             </div>
             <div class="element">
@@ -26,8 +20,9 @@
                 <p>
                     <button onclick="open_popup('credits_regions')">Region credits</button><br>
                     <button onclick="open_popup('credits_tiles')">Tile and Props credits</button><br>
-                    <button onclick="open_popup('missing_rooms')">Missing rooms</button><br>
-                    <button onclick="open_popup('reference_regions')">Reference regions</button>
+                    <!-- <button onclick="open_popup('missing_rooms')">Missing rooms</button><br> -->
+                    <button onclick="open_popup('reference_regions')">Reference regions</button><br>
+                    <button onclick="open_popup('website_contributors')">Website Contributors</button>
                 </p>
             </div>
         </div>
@@ -194,6 +189,30 @@
                         <li></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+
+        <!-- WEBSITE CONTRIBUTORS -->
+        <div class="window" id="website_contributors">
+            <div class="window_content">
+                <div class="top">
+                    <p>
+                        People who have contributed to this website
+                    </p>
+                    <hr>
+                </div>
+                <div class="list" id="website_contributors_list">
+                    <ul>
+                        <li><span>Alduris</span> - Wiki blurbs</li>
+                        <li><span>Bro</span> - Cornifer, Init Editor blurb</li>
+                        <li><span>Ongomato</span> - Prop Renderer blurb</li>
+                        <li><span>MagicaJaphet</span> - Repo Logo</li>
+                        <li><span>Totally Dutch</span> - Helping fixing Inits and Material Preveiws</li>
+                        <li><span>Skefir</span> - Prop inits</li>
+                        <li><span>Rød ara</span> - Effects compilation Thumbnail</li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     </div>

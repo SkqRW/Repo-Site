@@ -6,10 +6,8 @@
 [#nm:"machine box C_N 1x1", #sz:point(1,1), #specs:[1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,4], #bfTiles:1, #rnd:1, #ptPos:0, #tags:["nonSolid"]]
 [#nm:"machine box C_SymB 1x1", #sz:point(1,1), #specs:[1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,4], #bfTiles:1, #rnd:1, #ptPos:0, #tags:["nonSolid"]]
 [#nm:"extended machine", #sz:point(1,1), #specs:[1], #specs2:0, #tp:"voxelStruct", #repeatL:[3,2,1,1,1,2], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-Silly little machine box I guess
 [#nm:"Cargo Crate", #sz:point(3,2), #specs:[1, 1, 1, 1, 1, 1], #specs2:0, #tp:"voxelStruct", #repeatL:[2,1,1,6,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"Big cargo crate", #sz:point(6,4), #specs:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], #specs2:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], #tp:"voxelStruct", #repeatL:[2,1,1,15,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-[#nm:"MyztiBeamsr", #sz:point(4,2), #specs:[1,1,1,1,1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[2,6,2], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"Extended Metal", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[10], #bfTiles:1, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
 [#nm:"Thick I Beam H", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[2,8], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
 [#nm:"Thick I Beam V", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[2,8], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
@@ -27,8 +25,6 @@ Silly little machine box I guess
 
 [#nm:"Giant Pipe LD", #sz:point(12,12), #specs:[-1,-1,-1,0,1,1,1,1,1,0,-1,-1,-1,-1,-1,0,1,1,1,1,1,5,0,-1,-1,-1,-1,0,1,1,1,1,1,1,5,0, -1,-1,-1,0,2,1,1,1,1,1,1,1,-1,-1,-1,-1,0,1,1,1,1,1,1,1, -1,-1,-1,-1,0,2,1,1,1,1,1,1,-1,-1,-1,-1,-1,0,2,1,1,1,1,1,-1,-1,-1,-1,-1,-1,0,0,2,1,1,1, -1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1], #specs2:[-1,-1,-1,0,1,1,1,1,1,0,-1,-1,-1,-1,-1,0,1,1,1,1,1,5,0,-1,-1,-1,-1,0,1,1,1,1,1,1,5,0, -1,-1,-1,0,2,1,1,1,1,1,1,1,-1,-1,-1,-1,0,1,1,1,1,1,1,1, -1,-1,-1,-1,0,2,1,1,1,1,1,1,-1,-1,-1,-1,-1,0,2,1,1,1,1,1,-1,-1,-1,-1,-1,-1,0,0,2,1,1,1, -1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1], #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,2,2,2,2, 2,4], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
 -["MyztiTile", color(182, 105, 255)]
-[#nm:"MyztiBump", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[2,3,2,3], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
-[#nm:"MyztiSmooth", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[5,5], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"myztibarricateVent", #sz:point(10,9), #specs:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,1,1,1,1], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"MyztiBarricate", #sz:point(10,9), #specs:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,1,1,1,1], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"myztiBarricatebumper", #sz:point(1,9), #specs:[1,1,1,1,1,1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,1,1,1,1,1,1,1], #bfTiles:0, #rnd:1, #ptPos:0, #tags:[]]
@@ -84,12 +80,6 @@ Silly little machine box I guess
 [#nm:"RR Metal Block", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[10], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
 [#nm:"RR Metal Bar H", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,7], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
 [#nm:"RR Metal Bar V", #sz:point(2,2), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,1,1,7], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
--["Metal Construction 2", color(0, 10, 255)]
-
-[#nm:"Slant Beam A", #sz:point(2,2), #specs:[0,3,-1,-1], #specs2:0, #tp:"voxelStruct", #repeatL:[1, 8, 1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-[#nm:"Slant Beam B", #sz:point(2,2), #specs:[-1,-1,0,2], #specs2:0, #tp:"voxelStruct", #repeatL:[1, 8, 1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-[#nm:"Slant Beam C", #sz:point(2,2), #specs:[-1,-1,4,0], #specs2:0, #tp:"voxelStruct", #repeatL:[1, 8, 1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-[#nm:"Slant Beam D", #sz:point(2,2), #specs:[5,0,-1,-1], #specs2:0, #tp:"voxelStruct", #repeatL:[1, 8, 1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
 -["Canal Wall Segments", color(100, 100, 100)]
 
 [#nm:"Canal Segment N A", #sz:point(1,1), #specs:[1], #specs2:0, #tp:"voxelStruct", #repeatL:[10], #bfTiles:0, #rnd:1, #ptPos:0, #tags:["notTrashProp"]]
@@ -126,7 +116,7 @@ Silly little machine box I guess
 
 -["nStones", color(210, 180, 180)]
 [#nm:"Pillar divider alt", #sz:point(4,1), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,8,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
-[#nm:"Pillar divider alt", #sz:point(1,4), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,8,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
+[#nm:"Pillar divider alt h", #sz:point(1,4), #specs:[1,1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,8,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"Pillar divider 3wide", #sz:point(3,1), #specs:[1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,8,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
 [#nm:"Pillar divider 3wide alt", #sz:point(3,1), #specs:[1,1,1], #specs2:0, #tp:"voxelStruct", #repeatL:[1,8,1], #bfTiles:1, #rnd:1, #ptPos:0, #tags:[]]
 

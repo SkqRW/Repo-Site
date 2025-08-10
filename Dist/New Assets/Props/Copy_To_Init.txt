@@ -1,9 +1,1 @@
 -["New Assets", color(180, 0, 255)]
-[#nm:"EdgeProp 2px Solid", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(1,1), #repeatL:[1,9], #vars:10, #random:0, #tags:["drawLast"], #layerExceptions:[], #notes:["junctions past 6th variation"]]
-
-[#nm:"EdgeProp 2px L1", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(1,1), #repeatL:[1], #vars:10, #random:0, #tags:["drawLast"], #layerExceptions:[], #notes:["junctions past 6th variation"]]
-
-[#nm:"EdgeProp 4px Solid", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(1,1), #repeatL:[1,9], #vars:10, #random:0, #tags:["drawLast"], #layerExceptions:[], #notes:["junctions past 6th variation"]]
-
-[#nm:"EdgeProp 4px L1", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(1,1), #repeatL:[1], #vars:10, #random:0, #tags:["drawLast"], #layerExceptions:[], #notes:["junctions past 6th variation"]]
-[#nm:"DesertWindmill3", #tp:"standard", #colorTreatment:"standard", #bevel:2, #sz:point(9,9), #repeatL:[1,1,1,1,1], #tags:["randomRotat"], #layerExceptions:[], #notes:[]]

@@ -1,14 +1,1 @@
-FanDouble.png
-FanTriple.png
-FanQuad.png
-Grass.png
-PineBranchE.png
-PineBranchW.png
-Fence1.png
-Fence2.png
-EvilGrid.png
-EvilBlocks.png
-CorrugatedIron.png
-MetalBeam.png
-Chains.png
-Trash1.png
+Chessboard.png

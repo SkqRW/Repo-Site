@@ -1,8 +1,0 @@
--Tiles
-Ventilation Box Empty
-Metal Holes
-Four Holes
-MT Four Holes BG
-Metal Hole
-Small Hole
-Big Fan

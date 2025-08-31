@@ -1,1 +1,5 @@
 -["New Assets", color(180, 0, 255)]
+[#nm:"ConcreteSlab - NoDamage", #tp:"standard", #colorTreatment:"standard", #sz:point(6,8), #repeatL:[1,1,1,1], #tags:["snapToGrid"], #layerExceptions:[], #notes:[]]
+[#nm:"ConcreteSlab - LightDamage", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(6,8), #repeatL:[1,1,1,1], #vars:7, #tags:["snapToGrid"], #layerExceptions:[], #notes:[]]
+[#nm:"ConcreteSlab - HeavyDamage", #tp:"variedStandard", #colorTreatment:"standard", #sz:point(6,8), #repeatL:[1,1,1,1], #vars:9, #tags:["snapToGrid"], #layerExceptions:[], #notes:[]]
+[#nm:"Small Wheel Wheel", #tp:"standard", #colorTreatment:"standard", #sz:point(6,6), #repeatL:[3,7], #tags:["randomRotat"], #layerExceptions:[], #notes:[]]

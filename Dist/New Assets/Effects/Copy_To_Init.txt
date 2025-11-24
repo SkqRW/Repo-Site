@@ -1,6 +1,0 @@
--New Assets
-
--IDDC Plants
-[#nm:"IDDC_grower", #tp:"grower", #vars:10, #pxlSz:point(10,10), #pickColor:1, #hasGrad:0, #randomFlip:1, #initRotVar:60, #segmentRotVar:30, #segmentRotPull:0.6, #segmentMoveAmt: 4, #effectFadeOut:0.85, #effectFadeOut2:0.15]
-[#nm:"IDDC_grower-zoopy", #tp:"grower", #vars:10, #pxlSz:point(10,10), #pickColor:1, #hasGrad:0, #randomFlip:1, #initRotVar:180, #segmentRotVar:120, #segmentRotPull:0.9, #segmentMoveAmt: 4, #effectFadeOut:0.85, #effectFadeOut2:0.15]
-[#nm:"IDDC_Hangroot1", #tp:"hanger", #vars:15, #pxlSz:point(5,5), #pickColor:0, #hasgrad:0, #randomFlip:1, #initRotVar:60, #segmentRotVar:30, #segmentRotPull:0.6, #segmentMoveAmt: 4]

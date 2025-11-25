@@ -1,11 +1,12 @@
 const BASE_URL = window.location
 
-async function fetchPacks(path) {
+async function fetchFiles(path) {
   const url = `https://api.github.com/repos/Rainworld-Repository/Repo-Site/contents/${path}`;
 
   try {
     const response = await fetch(url, {
       headers: {
+        'Authorization': `Bearer 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`,
         'Accept': 'application/vnd.github.v3+json' // Specify API version
       }
     });
@@ -46,7 +47,7 @@ async function generatePacks() {
                 grid.id = "first_grid"
                 category.appendChild(grid)
     
-                fetchPacks(packFolder)
+                fetchFiles(packFolder)
                 .then((json) => {
                     if (json) {
                         for (i = 0; i < json.length; i++) {

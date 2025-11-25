@@ -1,16 +1,25 @@
-async function fetchPacks(packFolder) {
-    try {
-        let r = await fetch(packFolder)
-        if (!r.ok) {
-            throw new Error(`fetch error: ${response.status} - ${response.statusText}`);
-        }
-        let data = await r.text()
-        return data
+const BASE_URL = window.location
+
+async function fetchPacks(path) {
+  const url = `https://api.github.com/repos/Rainworld-Repository/Repo-Site/contents/${path}`;
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json' // Specify API version
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.statusText}`);
     }
-    catch (error) {
-        console.error("Error fetching folder contents:", error);
-        return null;
-    }
+
+    const data = await response.json();
+    return data; // This will be an array of objects representing files and directories
+  } catch (error) {
+    console.error('Error fetching GitHub directory:', error);
+    return null;
+  }
 }
 
 async function tryFetch(url) {
@@ -26,7 +35,7 @@ async function tryFetch(url) {
 async function generatePacks() {
     const categories = document.getElementsByClassName("category")
     if (categories && categories.length > 0) {
-        for (i in categories) {
+        for (i = 0; i < categories.length; i++) {
             let category = categories[i]
             let packFolder = category.getAttribute("packfolder")
             if (packFolder) {
@@ -38,19 +47,16 @@ async function generatePacks() {
                 category.appendChild(grid)
     
                 fetchPacks(packFolder)
-                .then((html) => {
-                    if (html) {
-                        let temp = document.createElement('html')
-                        temp.innerHTML = html
-
-                        let templinks = temp.getElementsByTagName("a")
-                        for (i = 0; i < templinks.length; i++) {
+                .then((json) => {
+                    if (json) {
+                        for (i = 0; i < json.length; i++) {
+                            let item = json[i]
                             if (i == 0) {
                                 continue
                             }
                             let button = document.createElement("a")
-                            button.href = templinks[i].href
-                            button.download = templinks[i].innerHTML
+                            button.href = item.path
+                            button.download = item.name
                             button.draggable = false
                             grid.appendChild(button)
 
@@ -58,12 +64,13 @@ async function generatePacks() {
                             border.classList.add("border")
                             button.appendChild(border)
 
-                            let zipText = templinks[i].innerHTML
+                            let zipText = item.name
+                            let fileName = zipText.split('.')[0]
 
                             let img = document.createElement("img")
                             let directories = packFolder.split("/")
 
-                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1]}/${zipText.split('.')[0]}.webp`
+                            let imgUrl = `assets/media/img/lists/${directories[directories.length - 1]}/${fileName}.webp`
                             tryFetch(imgUrl)
                             .then((res) => {
                                 if (res) {
@@ -75,12 +82,12 @@ async function generatePacks() {
                             })
                             
 
-                            img.alt = zipText.split('.')[0]
+                            img.alt = fileName
                             img.draggable = false
                             button.appendChild(img)
 
                             let header = document.createElement("h3")
-                            header.innerHTML = zipText.split(".")[0]
+                            header.innerHTML = fileName
                             button.appendChild(header)
                         }
                     }

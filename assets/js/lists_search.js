@@ -1,7 +1,9 @@
 document.getElementById("search_line").addEventListener("input", filter_results);
+document.getElementById("search_items").addEventListener("change", filter_results);
 
 function filter_results() {
     var line_input = document.getElementById('search_line').value.toLowerCase();
+    var search_items = document.getElementById('search_items').checked;
     /* console.log(line_input); */
 
     var grids = document.getElementsByClassName("grid");
@@ -12,7 +14,16 @@ function filter_results() {
         for (let link of grid.children) {
             for (let h3 of link.querySelectorAll("h3")) {
                 var item_name = h3.innerText.toLowerCase();
-                if (!item_name.includes(line_input)) {
+                
+                var match = item_name.includes(line_input);
+                
+                // Solo buscar en archivos .png si el checkbox está marcado
+                if (search_items) {
+                    var png_files = link.getAttribute('data-png-files') || '';
+                    match = match || png_files.includes(line_input);
+                }
+                
+                if (!match) {
                     link.style.display = "none";
                 }
                 else {

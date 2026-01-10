@@ -30,9 +30,30 @@ async function tryFetch(url) {
     }
 }
 
+// Cache index packs
+let packIndex = null;
+
+async function loadPackIndex() {
+    if (packIndex) return packIndex;
+    
+    try {
+        const response = await fetch('./pack_index.json');
+        if (response.ok) {
+            packIndex = await response.json();
+            console.log(`loaded packs: ${packIndex.totalPacks} packs`);
+            return packIndex;
+        }
+    } catch (error) {
+        console.warn('Pack index not found, falling back to manual loading');
+    }
+    return null;
+}
+
 async function generatePacks() {
     const categories = document.getElementsByClassName("category")
     if (categories && categories.length > 0) {
+         const index = await loadPackIndex();
+        
         for (let category of categories) {
             let packFolder = category.getAttribute("packfolder")
             if (packFolder) {
@@ -89,6 +110,22 @@ async function generatePacks() {
                             let header = document.createElement("h3")
                             header.innerHTML = fileName
                             button.appendChild(header)
+
+                            // Search for the element in each pack (only .png)
+                            if (index) {
+                                // Normalize the path: convert \ to / and remove "Packs/" from the beginning
+                                const normalizedPath = item.path
+                                    .replace(/\\/g, '/')
+                                    .replace(/^Packs\//, '');
+                                    
+                                // Not the best solution, but a solution i guess
+                                const packInfo = index.packs.find(p => p.path === normalizedPath);
+                                
+                                if (packInfo && packInfo.pngFiles) {
+                                    const pngFiles = packInfo.pngFiles.map(f => f.toLowerCase());
+                                    button.setAttribute('data-png-files', pngFiles.join('|'));
+                                }
+                            }
                         }
                     }
                 })

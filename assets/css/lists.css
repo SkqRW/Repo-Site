@@ -1,13 +1,63 @@
 /* SEARCHBAR */
-.website_content .searchbar {
 
+.website_content .search_options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+    margin: 10px;
+    gap: 20px;
+}
+
+/* CHECKBOX CIRCULAR */
+.website_content #search_items {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    width: 25px;
+    height: 25px;
+    
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.website_content #search_items:hover {
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.website_content #search_items:checked {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.website_content .search_items {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.website_content .searchbar {
     position: relative;
 
     margin-right: 46px;
-    padding-top: 50px;
 
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 .website_content .searchbar input {
     all: unset;
@@ -47,7 +97,8 @@
 }
 .website_content .searchbar img {
     position: absolute;
-    top: 61px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 11px;
 
     opacity: 75%;

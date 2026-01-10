@@ -1,0 +1,34 @@
+name: Generate Pack Index
+
+on:
+  push:
+    paths:
+      - 'Dist/Packs/**/*.zip'
+  workflow_dispatch:
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install jszip
+        
+      - name: Generate pack index
+        run: node scripts/generate_pack_index.js
+        
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add pack_index.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update pack index [skip ci]"
+          git push

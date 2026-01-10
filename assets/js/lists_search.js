@@ -7,29 +7,25 @@ function filter_results() {
     /* console.log(line_input); */
 
     var grids = document.getElementsByClassName("grid");
+    var grid = grids[0];
 
-    /* console.log(grids); */
-
-    for (let grid of grids) {
-        for (let link of grid.children) {
-            for (let h3 of link.querySelectorAll("h3")) {
-                var item_name = h3.innerText.toLowerCase();
-                
-                var match = item_name.includes(line_input);
-                
-                // Solo buscar en archivos .png si el checkbox está marcado
-                if (search_items) {
-                    var png_files = link.getAttribute('data-png-files') || '';
-                    match = match || png_files.includes(line_input);
-                }
-                
-                if (!match) {
-                    link.style.display = "none";
-                }
-                else {
-                    /* console.log(item_name); */
-                    link.style.display = "flex";
-                }
+    for (let link of grid.children) {
+        for (let h3 of link.querySelectorAll("h3")) {
+            var item_name = h3.innerText.toLowerCase();
+            
+            var match = item_name.includes(line_input);
+            
+            if (search_items) {
+                var png_files = link.getAttribute('data-png-files') || '';
+                match = match || png_files.includes(line_input);
+            }
+            
+            if (!match) {
+                link.style.display = "none";
+            }
+            else {
+                /* console.log(item_name); */
+                link.style.display = "flex";
             }
         }
     }

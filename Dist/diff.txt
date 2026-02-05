@@ -1,78 +1,16 @@
 
+
 Graphics
-Graphics\Inits
-LevelEditorProjects\Archived Level Editor\Fishswallower's Editor\LevelEditorProjects\Carriere\Carriere
-LevelEditorProjects\Archived Level Editor\Fishswallower's Editor\LevelEditorProjects\Carriere\RailWay
-LevelEditorProjects\Region Expansions\Floatsam Cove
-LevelEditorProjects\Region Packs\Last Wish\Arenas
-LevelEditorProjects\Region Packs\Last Wish\GW
-LevelEditorProjects\Region Packs\Last Wish\LC
-LevelEditorProjects\Region Packs\Last Wish\Last Wish Nightmare
-LevelEditorProjects\Region Packs\Last Wish\MS
-LevelEditorProjects\Region Packs\Last Wish\OE
-LevelEditorProjects\Region Packs\Last Wish\SB
-LevelEditorProjects\Region Packs\Last Wish\SS
-LevelEditorProjects\Region Packs\Last Wish\UW
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Celestial Summit
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Connections
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Fractured Foundry
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Freezing Flights\Freezing Flights old
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Freezing Flights
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Gates
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Global Hyper-Transit System\Global Hyper-Transit System old\Connections
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Global Hyper-Transit System\Global Hyper-Transit System old
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Global Hyper-Transit System\Global Hyper-Transit System old\Gates
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Global Hyper-Transit System
-LevelEditorProjects\Region Packs\Polar Circut [CELESTE] [XQ] [IQ] [G0] [LTHE]\Mountain's Edge
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\CC
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\GATES
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\GW
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\HI
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\LF
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\SU
-LevelEditorProjects\Region Packs\The Evergreen Expansion\RIV WORLDSTATE\SU\missing SU
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\CC
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\CL
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\GATES
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\GW
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\HI
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\LF
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\OZ
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\SB
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\SU
-LevelEditorProjects\Region Packs\The Evergreen Expansion\SAINT + EVERGREEN WORLDSTATE\UG
-LevelEditorProjects\Regions\Coastal Industry [IZ]\Arenas
-LevelEditorProjects\Regions\Coastal Industry [IZ]\Connections
-LevelEditorProjects\Regions\Coastal Industry [IZ]\Gates
-LevelEditorProjects\Regions\Coastal Industry [IZ]
-LevelEditorProjects\Regions\Coastal Industry [IZ]\Scrapped and Unused Rooms\unused
-LevelEditorProjects\Regions\Ferrous Steppes [QF]\Arenas
-LevelEditorProjects\Regions\Ferrous Steppes [QF]\Connections
-LevelEditorProjects\Regions\Ferrous Steppes [QF]\Gates
-LevelEditorProjects\Regions\Ferrous Steppes [QF]
-LevelEditorProjects\Regions\Ferrous Steppes [QF]\Scrapped and Unused Rooms
-LevelEditorProjects\Regions\Overgrown Urban [O7] [WAO7]\Connections
-LevelEditorProjects\Regions\Overgrown Urban [O7] [WAO7]\Decaying Capital
-LevelEditorProjects\Regions\Overgrown Urban [O7] [WAO7]\Gates
-LevelEditorProjects\Regions\Overgrown Urban [O7] [WAO7]
-LevelEditorProjects\Regions\Rusted Canals [2G]
-LevelEditorProjects\Regions\Rusted Canals [2G]\Connections
-LevelEditorProjects\Regions\Rusted Canals [2G]\Gates
-LevelEditorProjects\Regions\Sanctum of Stillness [AW]
-LevelEditorProjects\Regions\Sanctum of Stillness [AW]\Connections
-LevelEditorProjects\Regions\Sanctum of Stillness [AW]\Gates
-LevelEditorProjects\Regions\Sequestered Facility [SEQF]\Connections
-LevelEditorProjects\Regions\Sequestered Facility [SEQF]\Gates
-LevelEditorProjects\Regions\Sequestered Facility [SEQF]
-New Assets\Effects
-New Assets\Misc\Autotiles
-New Assets\Misc\Light Brushes
-New Assets\Misc\Themes\bones
-New Assets\Misc\Themes\candy
-New Assets\Misc\Themes\retro
-New Assets\Misc\Themes\signalspires
-New Assets\Misc\Themes\snow
-New Assets\Props
-New Assets\Tiles
-Props\Inits
+LevelEditorProjects\Region Expansions\Diverse Shelters
+LevelEditorProjects\Region Packs\Eastern Expanse [EDC] [EE]
+LevelEditorProjects\Region Packs\Sunlit Trail [CW] [FR] [GU] [EU] [MF] [NP] [PA] [SD]
+LevelEditorProjects\Regions\Derelict Installation [DLI]
+LevelEditorProjects\Regions
+LevelEditorProjects\Regions\Sky Port [S9]
+LevelEditorProjects\Regions\Steel Mill [SM]
+LevelEditorProjects\Regions\The Pipe [TP]
+Materials
+Misc\Themes
+New Assets
+New Assets\Misc
 Props
